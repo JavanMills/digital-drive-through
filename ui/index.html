@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Drive-Thru</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Digital Drive-Thru</h1>
+            <p class="subtitle">Select your items from our menu</p>
+        </header>
+
+        <main>
+            <section class="menu-board">
+                <h2>Menu</h2>
+                <div class="menu-items" id="menuItems">
+                    <!-- Menu items will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <section class="order-summary">
+                <h2>Your Order</h2>
+                <div class="selected-items" id="selectedItems">
+                    <!-- Selected items will appear here -->
+                </div>
+                <div class="order-total">
+                    <span>Total:</span>
+                    <span id="totalAmount">$0.00</span>
+                </div>
+                <button id="purchaseButton" class="purchase-btn">Complete Order</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
